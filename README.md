@@ -74,10 +74,6 @@ README — первое, что прочитает пользователь, к�
 
 ![Команда](https://github.com/yandex-praktikum/mf.messenger.praktikum.yandex.images/blob/master/mf/team.png)
 
-### **Примеры README**
+### **Макет доступен по ссылке:*
 
-- «[Реакт](https://github.com/facebook/react)»,
-- «[Эхо](https://github.com/labstack/echo)»,
-- «[Вебпак](https://github.com/webpack/webpack)»,
-- «[ТДенгине](https://github.com/taosdata/TDengine)»,
-- «[Соул-хантинг](https://github.com/vladpereskokov/soul-hunting/)».
+- «[Figma](https://www.figma.com/file/tZRXJpQ52v6ymkowQoEmVU/Messenger?node-id=0%3A1&t=b6IkVDM1VnjfVcJJ-0)»
