@@ -1,0 +1,12 @@
+<li class="{{ messageClass }}">
+  <article class="message__container">
+    <button class="{{ messageButtonClass }}">
+      <img class="message__icon" alt="иконка изменения сообщения" src="./static/icons/dots.svg"/>
+    </button>
+    <p class="message__content">{{ messageText }}</p>
+     <div class="message__wrapper">
+      <img class="{{ messageReceivedIconClass }}" src="./static/icons/received.svg" alt="иконка прочитанного сообщения"/>
+      <span class="message__time">{{ messageTime }}</span>
+    </div>
+  </article>
+</li>

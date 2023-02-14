@@ -1,0 +1,30 @@
+<section class="profile">
+  <div class="profile__content">
+  <div class="profile__wrapper">
+    <div class="profile__image">
+      <img class="profile__icon" src="./static/icons/profile.svg" alt="иконка профиля" />
+    </div>
+    <button class="profile__change">Поменять аватар</button>
+  </div>
+  <h1 class="profile__title">Иван</h1>
+  <ul class="profile__data">
+    {{>profile/item/item subtitle="Почта" value="pochta@yandex.ru" }}
+    {{>profile/item/item subtitle="Логин" value="ivanivanov" }}
+    {{>profile/item/item subtitle="Имя" value="Иван" }}
+    {{>profile/item/item subtitle="Фамилия" value="Иванов" }}
+    {{>profile/item/item subtitle="Имя в чате" value="Иван" }}
+    {{>profile/item/item subtitle="Телефон" value="+7 (909) 967 30 30" }}
+  </ul>
+  <ul class="profile__data">
+    <li class="profile__item">
+      <a class="profile__action">Изменить данные</a>
+    </li>
+    <li class="profile__item">
+      <a class="profile__action">Изменить пароль</a>
+    </li>
+    <li class="profile__item profile__item_type_logout">
+      <button class="profile__button">Выйти</button>
+    </li>
+  </ul>
+  </div>
+</section>

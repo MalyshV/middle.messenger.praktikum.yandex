@@ -1,0 +1,34 @@
+<form
+  name={{ formName }}
+  id={{ formId }}
+  class="form"
+  onsubmit="event.preventDefault()"
+>
+  <fieldset class="form__container">
+    <legend class="form__title">Войти</legend>
+    <ul class="form__fields">
+      <li class="form__field">
+        {{> input/input
+          label="Логин"
+          name="login"
+          type="text"
+          placeholder="Логин"
+          errorText="Неверный логин"
+          required="true"
+        }}
+      </li>
+      <li class="form__field">
+        {{> input/input
+          label="Пароль"
+          name="password"
+          type="password"
+          placeholder="Пароль"
+          errorText="Неверный Пароль"
+          required="true"
+        }}
+      </li>
+    </ul>
+    {{> button/button label="Авторизоваться" disabled="true" }}
+    <a class="form__link" href="/signin">Нет аккаунта?</a>
+  </fieldset>
+</form>

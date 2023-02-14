@@ -1,7 +1,3 @@
----
-id: "root" 
----
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -9,9 +5,14 @@ id: "root"
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Messenger</title>
+  <link rel="stylesheet" href="src/index.pcss" />
 </head>
-<body>
-  <div id={{ id }}></div>
-  <script src="./src/index.js" type="module"></script>
+<body class="page">
+  <main class="page__content">
+    <section class="page__section">
+      {{> aside/aside}}
+      {{> chat/chat}}
+    </section>
+  </main>
 </body>
 </html>

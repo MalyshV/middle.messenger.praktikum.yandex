@@ -1,0 +1,84 @@
+<form
+  name={{ formName }}
+  id={{ formId }}
+  class="form"
+  onsubmit="event.preventDefault()"
+>
+  <fieldset class="form__container">
+    <legend class="form__title">Зарегистироваться</legend>
+    <ul class="form__fields form__fields_place_signin">
+      <li class="form__field">
+        {{> input/input
+          label="Почта"
+          name="email"
+          type="email"
+          placeholder="Почта"
+          errorText="Неверный формат почты"
+          required="true"
+        }}
+      </li>
+      <li class="form__field">
+        {{> input/input
+          label="Логин"
+          name="login"
+          type="text"
+          placeholder="Логин"
+          errorText="Неверный логин"
+          required="true"
+        }}
+      </li>
+      <li class="form__field">
+        {{> input/input
+          label="Имя"
+          name="first_name"
+          type="text"
+          placeholder="Имя"
+          errorText="Введите имя"
+          required="true"
+        }}
+      </li>
+      <li class="form__field">
+        {{> input/input
+          label="Фамилия"
+          name="second_name"
+          type="text"
+          placeholder="Фамилия"
+          errorText="Введите фалимию"
+          required="true"
+        }}
+      </li>
+      <li class="form__field">
+        {{> input/input
+          label="Телефон"
+          name="phone"
+          type="text"
+          placeholder="Телефон"
+          errorText="Введите номер в формате +7 000 000-00-00"
+          required="true"
+        }}
+      </li>
+      <li class="form__field">
+        {{> input/input
+          label="Пароль"
+          name="password"
+          type="password"
+          placeholder="Пароль"
+          errorText="Неверный Пароль"
+          required="true"
+        }}
+      </li>
+      <li class="form__field">
+        {{> input/input
+          label="Пароль (еще раз)"
+          name="password"
+          type="password"
+          placeholder="Пароль (еще раз)"
+          errorText="Пароли не совпадают"
+          required="true"
+        }}
+      </li>
+    </ul>
+    {{> button/button label="Зарегистрироваться" }}
+    <a class="form__link" href="/signin">Войти</a>
+  </fieldset>
+</form>

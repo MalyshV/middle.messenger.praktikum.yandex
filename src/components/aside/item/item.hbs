@@ -1,0 +1,13 @@
+<li class="chat-item">
+  <a class="chat-item__link" href="{{ chatHref}}">
+    <img class="chat-item__logo" src="{{ chatSrc }}" alt="логотип чата" />
+    <div class="chat-item__info">
+      <h3 class="chat-item__title">{{ chatTitle}}</h3>
+      <p class="chat-item__message">{{ chatLastMessagePrewiew}}</p>
+    </div>
+    <div class="chat-item__data">
+      <p class="chat-item__time">{{  chatLastMessageTime }}</p>
+      <span class="{{ messageCounterClass }}">{{ chatNewMessagesCounter }}</span>
+    </div>
+  </a>
+</li>
