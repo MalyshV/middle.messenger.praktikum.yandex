@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel ./index.hbs --no-cache",
-    "srart": "parcel build ./index.hbs --no-cache",
+    "oldSrart": "parcel build ./index.hbs --no-cache",
+    "srart": "parcel build src/index.html && node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,8 +26,9 @@
     "express": "4.18.2",
     "parcel": "2.8.3",
     "postcss": "8.4.21",
-    "postcss-import": "^15.1.0",
-    "postcss-nested": "6.0.0"
+    "postcss-import": "15.1.0",
+    "postcss-nested": "6.0.0",
+    "postcss-simple-vars": "7.0.1"
   },
   "dependencies": {
     "handlebars": "4.7.7"

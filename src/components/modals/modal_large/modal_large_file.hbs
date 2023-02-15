@@ -1,10 +1,10 @@
 <div class="modal modal_is_opened">
   <div class="modal__content">
-    <form name="upload-file" class="modal__container" onsubmit="event.preventDefault()">
+    <form name="upload-file" class="modal__container">
       <legend class="modal__title">{{ modalTitle }}</legend>
       <fieldset class="modal__wrapper">
         <label class="modal__label" for="file">{{ modalLabelText }}</label>
-        <input class="modal__input" id="file" type="file" name="file" accept="image/*" />
+        <input class="modal__input" id="file" type="file" name="avatar" accept="image/*" />
       <span class="modal__error">{{ modalErrorText }}</span>
       </fieldset>
       {{> button/button label="Поменять" }}

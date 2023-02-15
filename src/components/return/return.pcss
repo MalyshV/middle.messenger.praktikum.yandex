@@ -7,30 +7,30 @@
   align-items: center;
   justify-content: center;
   align-self: flex-start;
-  background-color: var(--background-aside-color);
-  border-right: 1px solid var(--background-inputs-color);
-}
+  background-color: $background-aside-color;
+  border-right: 1px solid $background-inputs-color;
 
-.return__link {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: var(--text-button-color);
-  background-color: #3392C7;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
+  &__link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $text-button-color;
+    background-color: $text-actions-color;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
-.return__link:hover {
-  opacity: 0.7;
-}
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 
-.return__image {
-  width: 4px;
-  height: 10px;
+  &__image {
+    width: 10px;
+    height: 10px;
+  }
 }

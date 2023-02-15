@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="src/index.pcss" />
 </head>
 <body class="page">
-  <main class="page__content">
-    <section class="page__section">
-      {{> aside/aside}}
-      {{> chat/chat}}
+  <main class="page__content page__content_type_vertical">
+    {{> review-navigation/review-navigation }}
+    <section class="page__section page__section_type_vertical">
+      {{> form/form_login }}
     </section>
   </main>
 </body>

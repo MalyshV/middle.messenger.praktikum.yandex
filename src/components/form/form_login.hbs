@@ -2,7 +2,6 @@
   name={{ formName }}
   id={{ formId }}
   class="form"
-  onsubmit="event.preventDefault()"
 >
   <fieldset class="form__container">
     <legend class="form__title">Войти</legend>
@@ -29,6 +28,6 @@
       </li>
     </ul>
     {{> button/button label="Авторизоваться" disabled="true" }}
-    <a class="form__link" href="/signin">Нет аккаунта?</a>
+    <a class="form__link" href="#">Нет аккаунта?</a>
   </fieldset>
 </form>

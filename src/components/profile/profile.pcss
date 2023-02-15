@@ -8,177 +8,202 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.profile__content {
-  max-width: 530px;
-  width: 100%;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  &__content {
+    max-width: 530px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.profile__wrapper {
-  margin-bottom: 20px;
-  display: flex;
-  position: relative;
-}
+  &__wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+  }
 
-.profile__image {
-  width: 130px;
-  height: 130px;
-  box-sizing: border-box;
-  background-color: var(--background-inputs-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
+  &__image {
+    width: 130px;
+    height: 130px;
+    box-sizing: border-box;
+    background-color: $background-inputs-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
-.profile__change {
-  display: none;
-  background-color: var(--background-popups-color);
-  opacity: 0.5;
-  width: 130px;
-  height: 130px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  color: var(--background-secondary-color);
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: var(--font-size-text);
-  line-height: 14px;
-  text-align: center;
-}
+    &:hover + .profile__change {
+      display: flex;
+    }
+  }
 
-.profile__image:hover + .profile__change {
-  display: flex;
-}
+  &__change {
+    display: none;
+    background-color: $background-popups-color;
+    opacity: 0.5;
+    width: 130px;
+    height: 130px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: $background-secondary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 14px;
+    text-align: center;
+  }
 
-.profile__icon {
-  width: 40px;
-  height: 40px;
-}
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
 
-.profile__title {
-  margin: 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: var(--font-size-titles);
-  line-height: 16px;
-  text-align: center;
-  color: var(--text-primary-color);
-}
+  &__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $font-size-titles;
+    line-height: 16px;
+    text-align: center;
+    color: $text-primary-color;
+  }
 
-.profile__data {
-  width: 100%;
-  list-style-type: none;
-  margin: 60px 0 0;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-}
+  &__data {
+    width: 100%;
+    list-style-type: none;
+    margin: 60px 0 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
 
-.profile__item {
-  padding: 10px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-bottom: 1px solid #3392C7;
-  width: 100%;
-}
+    &_place_edit {
+      margin: 0;
+    }
+  }
 
-.profile__item_type_logout {
-  border-bottom: none;
-}
+  &__item {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $text-actions-color;
+    width: 100%;
 
-.profile__item:last-of-type {
-  border-bottom: none;
-}
+    &_type_logout {
+      border-bottom: none;
+    }
 
-.profile__subtitle {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: var(--font-size-text);
-  line-height: 13px;
-  color: var(--text-primary-color);
-}
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
 
-.profile__value {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: var(--font-size-text);
-  line-height: 13px;
-  text-align: right;
-  color: var(--text-secondary-color);
-}
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 13px;
+    color: $text-primary-color;
+  }
 
-.profile__action {
-  font-style: normal;
-  font-weight: 500;
-  font-size: var(--font-size-text);
-  line-height: 13px;
-  color: var(--text-actions-color);
-  cursor: pointer;
-}
+  &__value {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 13px;
+    text-align: right;
+    color: $text-secondary-color;
+  }
 
-.profile__action:hover {
-  opacity: 0.7;
-}
+  &__action {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 13px;
+    color: $text-actions-color;
+    cursor: pointer;
 
-.profile__button {
-  padding: 0;
-  height: 13px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: var(--font-size-text);
-  line-height: 13px;
-  color: var(--text-error-color);
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 
-.profile__button:hover {
-  opacity: 0.7;
-}
+  &__button {
+    padding: 0;
+    height: 13px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 13px;
+    color: $text-error-color;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
-.profile__label {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: var(--font-size-text);
-  line-height: 13px;
-  color: var(--text-primary-color);
-}
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 
-.profile__input {
-  padding: 0;
-  width: 50%;
-  font-style: normal;
-  font-weight: 500;
-  font-size: var(--font-size-text);
-  line-height: 13px;
-  text-align: right;
-  color: var(--text-secondary-color);
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
+  &__label {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 13px;
+    color: $text-primary-color;
+  }
 
-.profile__input:hover {
-  color: var(--text-actions-color);
+  &__input {
+    padding: 0;
+    width: 50%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 13px;
+    text-align: right;
+    color: $text-secondary-color;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $text-actions-color;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 97px 0 0;
+  }
+
+  &__fieldset {
+    width: 100%;
+    min-height: 280px;
+    height: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
