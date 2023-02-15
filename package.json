@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "parcel ./static/index.hbs --no-cache",
-    "srart": "parcel build ./static/index.hbs --no-cache && node ./server.js",
+    "start": "parcel build ./static/index.hbs --no-cache && node ./server.js",
     "build": "parcel build ./static/index.hbs --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
