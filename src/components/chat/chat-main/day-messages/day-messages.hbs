@@ -1,0 +1,26 @@
+<li class="day-messages">
+  <h4 class="day-messages__name">{{ dayMessengesTitle }}</h4>
+  <ul class="day-messages__list">
+    {{> chat/chat-main/message/message
+      messageClass="message"
+      messageButtonClass="message__button"
+      messageReceivedIconClass="message__received"
+      messageText="Коллеги, завтра собрание Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam, facilis, id animi corporis quisquam doloremque dolorem sapiente atque voluptates veniam illo distinctio? Quas, quod provident voluptas quos quaerat similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam, facilis, id animi corporis quisquam doloremque dolorem sapiente atque voluptates veniam illo distinctio? Quas, quod provident voluptas quos quaerat similique. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      messageTime="08:15"
+    }}
+    {{> chat/chat-main/message/message
+      messageClass="message message_type_mine"
+      messageButtonClass="message__button message__button_type_mine"
+      messageReceivedIconClass="message__received message__received_type_mine"
+      messageText="Принято!"
+      messageTime="08.30"
+    }}
+    {{> chat/chat-main/message/message
+      messageClass="message"
+      messageButtonClass="message__button"
+      messageReceivedIconClass="message__received"
+      messageText="Ну все, жду всех"
+      messageTime="08:44"
+    }}
+  </ul>
+</li>

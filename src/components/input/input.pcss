@@ -1,0 +1,59 @@
+@import "../../../configs/index.pcss";
+
+.input {
+  position: relative;
+  width: 100%;
+
+  &__text {
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-text;
+    line-height: 13px;
+    color: $text-primary-color;
+    border: none;
+    border-bottom: 1px solid $button-enable-color;
+    outline: none;
+    cursor: pointer;
+
+    &:invalid {
+      color: $text-error-color;
+    }
+
+    &:focus ~ .input__error {
+      display: flex;
+    }
+
+    &:not(:placeholder-shown) + .input__label {
+      display: flex;
+    }
+  }
+
+  &__label {
+    margin: 10px 0 0px;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-notes;
+    line-height: 9px;
+    color: $text-secondary-color;
+    display: none;
+    position: absolute;
+    top: -15px;
+    left: 0;
+  }
+
+  &__error {
+    display: none;
+    align-self: flex-start;
+    margin: 7px 0 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font-size-notes;
+    line-height: 9px;
+    color: $text-error-color;
+  }
+}

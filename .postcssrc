@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "postcss-import": true,
+    "postcss-nested": true,
+    "postcss-simple-vars": true,
+  }
+}
+
+// module.exports = {
+//   plugins: [
+//     require('autoprefixer'),
+//     require('postcss-nested'),
+//     require('postcss-import'),
+//   ]
+// };
+

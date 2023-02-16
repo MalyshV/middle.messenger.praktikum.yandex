@@ -1,0 +1,78 @@
+
+.message {
+  padding: 11px;
+  box-sizing: border-box;
+  min-width: 114px;
+  max-width: 402px;
+  background: $background-chat-message-color;
+  margin-right: auto;
+  border-radius: 0 10px 10px 10px;
+
+  &_type_mine {
+    background: $background-chat-my-message-color;
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 10px 0px 10px 10px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__button {
+    margin: 0;
+    margin-left: auto;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &_type_mine {
+      display: flex;
+    }
+  }
+
+  &__content {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-chat;
+    line-height: 15px;
+    color: $text-primary-color;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__received {
+    display: none;
+    margin-right: 3px;
+
+    &_type_mine {
+      display: flex;
+    }
+  }
+
+  &__time {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $font-size-notes;
+    line-height: 9px;
+    text-align: right;
+    color: $text-secondary-color;
+  }
+}

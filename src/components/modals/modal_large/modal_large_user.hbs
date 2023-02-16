@@ -1,0 +1,17 @@
+<div class="modal modal_is_opened">
+  <div class="modal__content">
+    <form name="upload-file" class="modal__container">
+      <legend class="modal__title">{{ modalTitle }}</legend>
+      <fieldset class="modal__wrapper">
+        {{> input/input
+          type="search"
+          name="search"
+          placeholder="Логин"
+          label="Логин"
+          errorText="Введите имя пользователя"
+        }}
+      </fieldset>
+      {{> button/button label="Добавить" }}
+    </form>
+  </div>
+</div>

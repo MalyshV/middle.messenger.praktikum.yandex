@@ -1,0 +1,66 @@
+@import "../../../../configs/index.pcss";
+
+.search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  &__wrapper {
+    width: 250px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    background-color: $background-inputs-color;
+    border-radius: 5px;
+    padding-left: 6px;
+    margin-right: 10px;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__icon_type_search {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $font-size-text;
+    line-height: 16px;
+    color: $text-primary-color;
+    outline: none;
+    background-color: $background-inputs-color;
+    cursor: pointer;
+
+    &::placeholder {
+      font-weight: 400;
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
